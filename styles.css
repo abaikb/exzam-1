@@ -100,18 +100,92 @@
 .box {
     display: flex;
 }
-.block {
-    background-image: url(./image/bg\ 2foot.png);
-    background-size: cover;
+.foot {
     width: 100%;
     height: 625px;
+    background-image: url(./image/bg\ 2foot.png);
     display: flex;
+    align-items: center;
     flex-direction: column;
-    justify-content: space-between;
-    align-content: center;
-    text-align: center;
-    
 }
+h3 {
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 0.1em;
+    margin-top: 92px;
+}
+.parag {
+    width: 721px;
+    height: 110px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-top: 34px;
+}
+
+.email {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    margin-top: 100px;
+}
+input::placeholder {
+    padding:  40px;
+    color: white;
+}
+input[type="email"] {
+    background: none;
+    border: none;
+}
+input[type="email"]:focus {
+  outline: none;
+}
+.line {
+    width: 335px;
+    height: 1px;
+    background: #FFFFFF;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    margin-top: 14px;
+
+}
+.line {
+    width: 335px;
+    height: 1px;
+    background: #FFFFFF;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    margin-top: 14px;
+
+}
+button {
+    width: 335px;
+    height: 64px;
+    background: #000000;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    margin-top: 25px;
+    border: none;
+}
+button:hover {
+    background: #2B2B2B;
+    box-shadow: 0px 0px 50px 5px #813434;
+}
+button:active {
+    background: #AF2A2A;
+    box-shadow: 0px 0px 50px 5px #813434;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 89px;
+    background: #000000;
+}
+
 
 @media screen and (max-width: 815px) {
     .conteiner {
@@ -169,7 +243,13 @@
     .pic {
         padding-top: 59px;
     }
-
+    .parag {
+        width: 591px;
+        height: 132px;
+    }
+    .email{
+        margin-top: 78px;
+    }
 
 
 
@@ -246,5 +326,22 @@
     .corod {
         width: 292px;
         height: 457px;
+    }
+    .foot {
+    }
+    h3 {
+        width: 164px;
+        height: 34px;
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 0.1em;
+    }
+    .parag {
+        width: 292px;
+        height: 220px;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+
     }
 }
