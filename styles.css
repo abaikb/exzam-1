@@ -38,7 +38,7 @@
 .nav:hover {
     color: #D28888;
 }
-.section {
+.main-content {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -226,7 +226,7 @@ footer {
     .nav {
         display: none;
     }
-    .section {
+    .main-content {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -287,7 +287,7 @@ footer {
         .burger {
         display: block;
     }
-        .section {
+        .main-content {
         height: 100vh;
         display: flex;
         justify-content: center;
