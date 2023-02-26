@@ -61,7 +61,7 @@
     letter-spacing: 0.2em;
 
 }
-.main {
+.article {
     width: 100%;
     height:100vh ;
     background-color: #000000;
@@ -85,7 +85,7 @@
     letter-spacing: 0.1em;
 
 }
-.pix {
+.image {
     display: flex;
     flex-direction: column;
     padding-left: 157px;
@@ -97,10 +97,10 @@
 .pic {
     padding: 116px 0px 0px 25px;
 }
-.box {
+.inner {
     display: flex;
 }
-.foot {
+.figure {
     width: 100%;
     height: 625px;
     background-image: url(./image/bg\ 2foot.png);
@@ -114,7 +114,7 @@ h3 {
     letter-spacing: 0.1em;
     margin-top: 92px;
 }
-.parag {
+.desc {
     width: 721px;
     height: 110px;
     font-weight: 400;
@@ -178,13 +178,37 @@ button:active {
     box-shadow: 0px 0px 50px 5px #813434;
 }
 footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
     height: 89px;
     background: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
 }
+
+.svg {
+    margin-right: 22px;
+}
+
+.svg:last-child {
+    margin: 0;
+}
+
+.svg:hover path {
+    fill: #D28888
+}
+
+.svg:active path {
+    fill: #AF2A2A
+}
+
+.support {
+    margin-right: 0;
+    text-decoration: none;
+}
+
 
 
 @media screen and (max-width: 815px) {
@@ -221,7 +245,7 @@ footer {
         line-height: 34px;
         letter-spacing: 0.2em;
     }
-    .main {
+    .article {
         width: 100%;
         height: 919px;
         display: flex;
@@ -233,17 +257,17 @@ footer {
         width: 591px;
         height: 176px;   
     }
-    .box {
+    .inner {
         display: flex;
     }
-    .pix {
+    .image {
         padding-left: 0;
         padding-top:59px;
     }
     .pic {
         padding-top: 59px;
     }
-    .parag {
+    .desc {
         width: 591px;
         height: 132px;
     }
@@ -284,7 +308,7 @@ footer {
         letter-spacing: 0.2em;
 
     }
-    .main {
+    .article {
         display: flex;
         width: 100%;
         height: 1442px;
@@ -297,13 +321,13 @@ footer {
     }
     .text-small {
         width: 292px;
-        height: 300px;
-        font-size: 18px;
+        height: 260px;
+        font-size: 16px;
         line-height: 22px;
         letter-spacing: 0.1em;
 
     }
-    .box {
+    .inner {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -323,11 +347,9 @@ footer {
         padding-top: 22px;
         padding-left: 0;
     }
-    .corod {
+    .img {
         width: 292px;
         height: 457px;
-    }
-    .foot {
     }
     h3 {
         width: 164px;
@@ -335,13 +357,28 @@ footer {
         font-size: 28px;
         line-height: 34px;
         letter-spacing: 0.1em;
+        margin-right: 125px;
     }
-    .parag {
+    .desc {
         width: 292px;
         height: 220px;
         font-size: 16px;
-        line-height: 20px;
         letter-spacing: 0.1em;
+        text-align: left;
 
     }
+    .line {
+        width: 292px;
+        height: 1px;
+    }
+    button {
+        width: 292px;
+        height: 64px;
+    }
+    footer {
+        height: 213px;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
 }
